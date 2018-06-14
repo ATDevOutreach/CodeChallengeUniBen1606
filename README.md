@@ -13,7 +13,7 @@ The code challenge is and will always be judged using the following criteria
 
 ## Terms and Conditions
 You can participate on as many challenges as you wish:
-  - Everyone can participate for secondary prices, BUT the winner must reside in Lagos, and have Nigerian citizenship 
+  - Everyone can participate for secondary prices, just ensure that you create your branch with your international format phone number. Airtime rewards will only go to countries we have AirTime APIs in.
   - Africa's Talking reserves the right to announce the winners
   - Africa's Talking reserves the right to reward the winners based on Africa's Talking Criterion
   - Do not share any code that you cannot opensource on the Git Repository as its open source and Africa's Talking will not be liable for any breach of intellectual property (if any) once shared on the platform.
