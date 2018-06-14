@@ -55,6 +55,11 @@ Please read the overview for all code challenges [here.](http://atdevoutreach.vi
 ## Get Support on the Africa's Talking Slack
 In case you have any questions, join our Slack [here](https://slackin-africastalking.now.sh/)
 
-
+## Testing the app online
+1. Launch the emulator from the [sandbox](https://account.africastalking.com/apps/sandbox/)
+2. Set a test phone number on the simulator page and click on Launch
+3. Select the SMS option and create a message
+4. The message can have any content but you must send it to the number 9798
+5. You will receive a message almost in no time :)
 
 

@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from server.views import index
+from server.views import sms_reply
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^sms/', index, name="index")
+    url(r'^sms/', sms_reply, name="index")
 ]

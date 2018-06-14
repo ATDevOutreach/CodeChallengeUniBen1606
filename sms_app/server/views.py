@@ -7,17 +7,17 @@ import africastalking
 
 
 
-username = os.environ["USERNAME"]
-api_key = os.environ["API_KEY"] 
+USERNAME = os.environ["USERNAME"]
+API_KEY = os.environ["API_KEY"] 
 
 #initialize api
-africastalking.initialize(username, api_key)
+africastalking.initialize(USERNAME, API_KEY)
 
 sms = africastalking.SMS
 
 #we aren't using a form, so csrf isn't needed
 @csrf_exempt
-def index(request):
+def sms_reply(request):
     if request.method == "POST":
         sender = request.POST["from"] 
         message = request.POST["text"]
