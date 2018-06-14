@@ -20,7 +20,7 @@ sms = africastalking.SMS
 def sms_reply(request):
     if request.method == "POST":
         sender = request.POST["from"] 
-        message = request.POST["text"]
+        message = request.POST["text"] #get message content from sender
         
         reply_message = "I am a fisherman. I sleep all day and work all night!" 
 
