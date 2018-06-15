@@ -25,6 +25,14 @@ You can participate on as many challenges as you wish:
 ## Code Challenge Bounty:
   - Airtime and Swag for the first 30 successful participants
 
+## Usage:
+- Open the [AfricasTalking Sandbox Simulator](https://simulator.africastalking.com:1517/).
+- Enter a test phone number on the text field provided.
+- Click on launch button to open a simulator
+- Select the SMS option
+- Create and send a message of any context to 6996
+- You will receive a response shortly after, if your message was sent succesfully
+
 ## Task
 In this code challenge you should create a 2-way SMS app that can be accessed on the Sandbox. The 2-Way SMS App should allow users to send an SMS from their simulator to your short code, and get a simple reply.
 
