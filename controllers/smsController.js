@@ -5,7 +5,7 @@ const message = 'I am a fisherman. I sleep all day and work all night!'
 // Your login credentials
 const shortCode = '41919'
 const username = 'sandbox'
-const apikey = 'a5b2374285f235ef8b8822dd3c20ad981610dbfd2a127143a13d8832304b253c'
+const apikey = process.env.KEY;
 const options = {
   apiKey: apikey,
   username: username
