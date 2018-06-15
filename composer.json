@@ -1,12 +1,1 @@
-{
-    "name": "codearcher/code-challenge-uni-ben1606",
-    "require": {
-        "ext-curl": "^7.2"
-    },
-    "authors": [
-        {
-            "name": "Brian Iyoha",
-            "email": "brian98ehis@gmail.com"
-        }
-    ]
-}
+{}
