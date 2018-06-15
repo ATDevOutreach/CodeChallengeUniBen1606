@@ -1,0 +1,12 @@
+africastalking==1.1.4
+certifi==2018.4.16
+chardet==3.0.4
+Django==1.11
+gunicorn==19.8.1
+idna==2.7
+psycopg2-binary==2.7.4
+pytz==2018.4
+requests==2.19.1
+schema==0.6.8
+urllib3==1.23
+whitenoise==3.3.1
