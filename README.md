@@ -2,6 +2,15 @@
 ## Due: 17th June,2018 or Earlier
 #### This code challenge is due on the 17th of June,2018 or earlier. 
 
+
+## How to test the application
+1. Open the [africastalking sanbox simulator](https://account.africastalking.com/apps/sandbox/) in your browser.
+2. Set a test phone number on the simulator page and click on Launch
+3. Select the SMS option and create a message
+4. The message can have any content but you must send it to the number 9798
+5. You will receive a message almost in no time :)
+
+
 ## Simple Unchanging Rules
 The code challenge is and will always be judged using the following criteria
   - A Correct fork, branch and pull request
@@ -54,7 +63,3 @@ Please read the overview for all code challenges [here.](http://atdevoutreach.vi
 
 ## Get Support on the Africa's Talking Slack
 In case you have any questions, join our Slack [here](https://slackin-africastalking.now.sh/)
-
-
-
-
