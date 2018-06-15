@@ -4,11 +4,12 @@
 
 
 ## How to test the application
-1. Open the [africastalking sanbox simulator](https://account.africastalking.com/apps/sandbox/) in your browser.
-2. Set a test phone number on the simulator page and click on Launch
-3. Select the SMS option and create a message
-4. The message can have any content but you must send it to the number 9798
-5. You will receive a message almost in no time :)
+1. Open the [africastalking sanbox simulator](https://simulator.africastalking.com:1517) in your browser.
+2. Select your country and choose a phone number on the simulator page to test application with.
+3. click on Launch
+4. Select the SMS option and type in a message in the provided field.
+5. Send the message to 41919.
+6. Voila!!! You would receive a response almost instantly.
 
 
 ## Simple Unchanging Rules
