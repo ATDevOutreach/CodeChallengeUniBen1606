@@ -1,29 +1,36 @@
 <?php
-require_once 'AfricasTalkingGateway.php';
+$request = $_SERVER['REQUEST_METHOD'];
 
+if ($request === 'GET') {
+    return print("<h3>This is a simple implementation of a two-way sms code challenge</h3>");
+} else if ($request === 'POST') {
 
-$username = "sandbox";
-$apikey = "e213988d4ac0a2a16604c7c796b64d613ad5269a13c1c8074c9457060d9b0a94";
-$recipient = "+2347031362606";
+    require_once 'AfricasTalkingGateway.php';
+    $to = $_POST['to'];
+    $username = getenv('AT_USERNAME');
+    $apikey = getenv('AT_APIKEY');
 
-$message = "I am a fisherman. I sleep all day and work all night!";
+    $recipient = trim($to);
 
-$from = "6996";
+    $message = "I am a fisherman. I sleep all day and work all night!";
 
-$gateway = new AfricasTalkingGateway($username, $apikey);
+    $from = "6996";
 
-try
-{
+    $gateway = new AfricasTalkingGateway($username, $apikey);
 
-    $results = $gateway->sendMessage($recipient, $message, $from);
-    foreach ($results as $result) {
-        if ($result->status === "Success") {
-            echo "<h3> Message succesfully sent to $result->number</h3><h3>Cost: $result->cost</h3>";
+    try
+    {
+
+        $results = $gateway->sendMessage($recipient, $message, $from);
+        foreach ($results as $result) {
+            if ($result->status === "Success") {
+                echo "<h3> Message succesfully sent to $result->number</h3><h3>Cost: $result->cost</h3>";
+            }
+
         }
+    } catch (AfricasTalkingGatewayException $e) {
+        echo "<h3> Message failed to send to  $recipient. See below message for error details or try again</h3><h5>Error:" . $e->getMessage() . "</h5>";
 
     }
-} catch (AfricasTalkingGatewayException $e) {
-  echo "<h3> Message failed to send to  $recipient. See below message for error details or try again</h3><h5>Error:".  $e->getMessage()."</h5>";
 
-  
 }
