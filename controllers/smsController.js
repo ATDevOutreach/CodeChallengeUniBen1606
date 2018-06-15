@@ -1,5 +1,8 @@
 var _ = require('lodash')
 
+// import environmental variables from our variables.env file
+require('dotenv').config({ path: 'variables.env' });
+
 //= ==================== APP CONSTANTS
 const message = 'I am a fisherman. I sleep all day and work all night!'
 // Your login credentials
