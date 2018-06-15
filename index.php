@@ -2,7 +2,7 @@
 
 class TwoWaySms
 {
-    public function sendSms()
+    public function sendSms($to)
     {
         error_log("hello, this is a test!");
 
@@ -15,7 +15,7 @@ class TwoWaySms
         $username = getenv('AT_USERNAME');
         $apikey = getenv('AT_APIKEY');
 
-        $recipient = trim($_POST['to']);
+        $recipient = trim($to);
 
         $message = "I am a fisherman. I sleep all day and work all night!";
 
@@ -38,20 +38,6 @@ class TwoWaySms
 
         }
     }
-
-    /**
-     * Returns the JSON encoded POST data, if any, as an object.
-     *
-     * @return Object|null
-     */
-    private function retrieveJsonPostData()
-    {
-        // get the raw POST data
-        $rawData = file_get_contents("php://input");
-
-        // this returns null if not valid json
-        return json_decode($rawData);
-    }
 }
 
 $request = $_SERVER['REQUEST_METHOD'];
@@ -61,6 +47,9 @@ if ($request === 'GET') {
     print("<h3>This is a simple implementation of a two-way sms code challenge</h3>");
 } else if ($request === 'POST') {
     $sms = new TwoWaySms();
-
-    $sms->sendSms();
+    $from = $_POST['from'];
+    $sms->sendSms($from);
 }
+
+
+
