@@ -7,7 +7,7 @@ class TwoWaySms
         error_log("hello, this is a test!");
 
         require_once 'AfricasTalkingGateway.php';
-        $rawData = $this->retrieveJsonPostData();
+       
         error_log(print_r($rawData,true));
         error_log("REQUEST" .print_r($_REQUEST,true)."");
         error_log("POST". print_r($_POST,true)."");
