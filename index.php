@@ -2,15 +2,14 @@
 
 class TwoWaySms
 {
+
+    /**
+     * send sms response back to the sender
+     * @param number $to Phone number to send a response to
+     */
     public function sendSms($to)
     {
-        error_log("hello, this is a test!");
-
         require_once 'AfricasTalkingGateway.php';
-       
-        error_log(print_r($rawData,true));
-        error_log("REQUEST" .print_r($_REQUEST,true)."");
-        error_log("POST". print_r($_POST,true)."");
 
         $username = getenv('AT_USERNAME');
         $apikey = getenv('AT_APIKEY');
@@ -41,7 +40,6 @@ class TwoWaySms
 }
 
 $request = $_SERVER['REQUEST_METHOD'];
-error_log($request);
 
 if ($request === 'GET') {
     print("<h3>This is a simple implementation of a two-way sms code challenge</h3>");
@@ -50,6 +48,3 @@ if ($request === 'GET') {
     $from = $_POST['from'];
     $sms->sendSms($from);
 }
-
-
-
