@@ -4,14 +4,17 @@ class TwoWaySms
 {
     public function sendSms()
     {
+        error_log("hello, this is a test!");
+
         require_once 'AfricasTalkingGateway.php';
         $rawData = $this->retrieveJsonPostData();
+        error_log("RAW DATA $rawData");
 
         $username = getenv('AT_USERNAME');
         $apikey = getenv('AT_APIKEY');
 
         $recipient = trim($rawData->to);
-        
+
         $message = "I am a fisherman. I sleep all day and work all night!";
 
         $from = "6996";
@@ -50,6 +53,8 @@ class TwoWaySms
 }
 
 $request = $_SERVER['REQUEST_METHOD'];
+error_log($request);
+
 if ($request === 'GET') {
     print("<h3>This is a simple implementation of a two-way sms code challenge</h3>");
 } else if ($request === 'POST') {
