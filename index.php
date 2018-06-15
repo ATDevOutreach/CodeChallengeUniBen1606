@@ -8,10 +8,9 @@ class TwoWaySms
 
         require_once 'AfricasTalkingGateway.php';
         $rawData = $this->retrieveJsonPostData();
-        error_log($rawData);
-        error_log("REQUEST" .print_r($_REQUEST)."");
-        error_log("POST". var_dump($_POST)."");
-        error_log("GET". var_dump($_GET)."");
+        error_log(print_r($rawData,true));
+        error_log("REQUEST" .print_r($_REQUEST,true)."");
+        error_log("POST". print_r($_POST,true)."");
 
         $username = getenv('AT_USERNAME');
         $apikey = getenv('AT_APIKEY');
