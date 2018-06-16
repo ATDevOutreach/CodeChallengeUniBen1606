@@ -12,7 +12,7 @@
 5. click on New Message
 ![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageC.png)
 6. Type in your message in the message box and use the short code 59777
-![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageD.png)
+![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageE.png)
 7. Done!!! you will receive a reply shortly.
 
 ## Simple Unchanging Rules
