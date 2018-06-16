@@ -4,15 +4,23 @@
 
 # Guide on how to use the simulator
 1. click on this [link](https://simulator.africastalking.com:1517/) to start [AfricasTalking Sandbox Simulator](https://simulator.africastalking.com:1517/) 
+
 ![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageA.png)
+
 2. In the phone number field provided, enter 9033363227
 3. click the lunch button to start the simulator
 4. click on the floating action button 
+
 ![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageB.png)
+
 5. click on New Message
+
 ![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageC.png)
+
 6. Type in your message in the message box and use the short code 59777; click send
+
 ![simulator_image](https://github.com/SavvyProgrammer/CodeChallengeUniBen1606/blob/2349033363227/Images/imageE.png)
+
 7. Done!!! you will receive a reply shortly.
 
 ## Simple Unchanging Rules
